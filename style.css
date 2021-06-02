@@ -1,119 +1,196 @@
-html{
+html {
     font-size: 62.5%;
 }
-*{
+
+* {
     font-family: 'Nunito', sans-serif;
 }
 
-body{
-    /* padding: 2.2rem 7rem; */
+body {
     overflow-x: hidden;
     margin: 0;
     box-sizing: border-box;
+
 }
-ul li .active{
-    text-decoration: underline;
+
+.over {
+    overflow-x: hidden;
+}
+
+ul li .active {
     background-color: blue;
-    /* padding-top: 5px ; */
 }
-.h1text{
+
+.h1text {
     font-size: 5.5rem;
     line-height: 7rem;
     /* font-weight: bold; */
     letter-spacing: normal;
     color: #000000;
 }
-.h2text{
+
+.h2text {
     font-size: 4rem;
     line-height: 5rem;
     letter-spacing: normal;
     color: #000000;
     /* font-weight: bold; */
 }
-.h3text{
+
+.h3text {
     font-size: 2.4rem;
     line-height: 3.4rem;
     letter-spacing: normal;
 }
-.h4text{
+
+.h4text {
     font-size: 2.2rem;
     line-height: 3.2rem;
     letter-spacing: normal;
     color: #000000;
 }
-.h5text{
+
+.h5text {
     font-size: 1.8rem;
     line-height: 2.6rem;
     letter-spacing: normal;
     font-weight: normal;
     color: #a4acb0;
 }
-.h6text{
-   font-size: 2rem;
+
+.h6text {
+    font-size: 2rem;
     line-height: 3rem;
     letter-spacing: normal;
     color: #a7afb2;
 }
-p{
+
+p {
     font-size: 1.5rem;
     line-height: 2rem;
     letter-spacing: normal;
-    color: #a4acb0; 
+    color: #a4acb0;
 }
-.headcol{
+
+.headcol {
     background-color: #f3f6fd;
     padding: 2.2rem 6rem 0;
 }
-.nav-pills .nav-link{
+
+.nav-pills .nav-link {
     color: #1f2343;
     font-weight: bold;
 }
-.nav-pills .nav-link.active{
+
+.nav-pills .nav-link.active {
     color: #3a5edd;
-    background-color: #f0f5f9;
-    
+    background-color: #f3f6fd;
+    border-bottom: 5px solid blue;
+    padding: .5rem;
 }
-.textwithli{
+
+.textwithli {
     font-size: 1.5rem;
     line-height: 2rem;
     letter-spacing: normal;
-    color: #a4acb0; 
+    color: #a4acb0;
 }
-.section1{
-    background-color: #f3f6fd;   
+
+.section1 {
+    background-color: #f3f6fd;
 }
-.paddsec{
-    padding: 1.5rem 6rem;
+
+.section2 {
+    background-color: #f3f6fd;
+
 }
-.daycol{
-    background-image: linear-gradient(#2887f4,#60e5e7);
-    border-radius: 1rem;
-    padding: 2rem 2rem ;
-    width: 90%;
+
+.section3 {
+    background-color: #f3f6fd;
+    margin-left: 5.5rem;
+    border-radius: 10px;
+}
+
+.paddsec {
+    padding: 1.5rem 6rem 6rem;
+}
+
+.paddsecproject {
+    padding: 0 6rem 1.5rem 1.5rem;
+}
+
+.daycol {
+    background-image: linear-gradient(#2887f4, #60e5e7);
+    width: 100%;
     height: auto;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
 }
-.orangelinear{
-    background-image: linear-gradient(#f16e53,#fabe53);
+
+
+.orangelinear {
+    background-image: linear-gradient(#f16e53, #fabe53);
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
 }
-.pinklinear{
-    background-image: linear-gradient(#e16ad4,#f1b5e7);
+
+.pinklinear {
+    background-image: linear-gradient(#e16ad4, #f1b5e7);
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
 }
-.greenlinear{
-    background-image: linear-gradient(#1f5475,#74d3ad);
+
+.greenlinear {
+    background-image: linear-gradient(#1f5475, #74d3ad);
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
 }
-.btnprev{
+
+.btnprev {
+    left: 110rem;
+    width: 3rem;
+    /* top: 15rem; */
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 1.5rem;
+    background-color: white;
+    ;
+    color: blue;
+    border: 1px solid white;
+}
+
+.btnnext {
+    width: 3rem;
+    height: 3rem;
+    top: 1.5rem;
+    border-radius: 50%;
+    /* bottom: 120px; */
+    background-color: white;
+    color: blue;
+    border: 1px solid white;
+}
+
+.btnprevproj {
     left: 110rem;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
     top: 1.5rem;
     /* bottom: 120px; */
-    background-color: white;;
+    background-color: white;
+    ;
     color: blue;
     border: 1px solid white;
 }
-.btnnext{
-    right: 10rrem;
+
+.btnnextproj {
     width: 3rem;
     height: 3rem;
     top: 1.5rem;
@@ -123,121 +200,224 @@ p{
     color: blue;
     border: 1px solid white;
 }
-.searchbox{
-    width: 25%;
-    border: none;
+
+.fa-chevron-right,
+.fa-chevron-left {
+    color: royalblue;
 }
-.searchbox:focus{
+
+.searchbox {
+    width: 42%;
+    border: unset;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+}
+
+.searchbox .input-group-text {
+    border: unset;
+}
+
+.searchbox .form-control {
+    border: unset;
+    box-shadow: unset;
+}
+
+
+.searchbox:focus {
     box-shadow: none;
 }
-.btn-check:focus{
+
+
+.btn-check:focus {
     box-shadow: none;
-    
+
 }
-.blacktext{
-     color: black;
- }
- .btn-outline1-primary{
-     background-color: white;
- }
-.btn-check:active+.btn-outline1-primary, .btn-check:checked+.btn-outline1-primary, .btn-outline1-primary.active, .btn-outline1-primary.dropdown-toggle.show, .btn-outline1-primary:active {
+
+.blacktext {
+    color: black;
+}
+
+.btn-outline1-primary {
+    background-color: white;
+}
+
+.btn-check:active {
+    color: #fff;
+    box-shadow: none;
+    background-color: #0d6efd;
+}
+
+.btn-check:active+.btn-outline1-primary,
+.btn-check:checked+.btn-outline1-primary,
+.btn-outline1-primary.active,
+.btn-outline1-primary.dropdown-toggle.show,
+.btn-outline1-primary:active {
     color: #fff;
     box-shadow: none;
     background-color: #0d6efd;
     /* border-color: #0d6efd; */
 }
-.btn-check:checked+.btn-outline-primary:focus{
+
+.btn-check:checked+.btn-outline-primary:focus {
     box-shadow: none;
 }
- .btn-outline-primary:focus{
-     box-shadow: none;
- }
- .imgs{
-     width: 5rem;
-     height: 5rem;
- }
-.bluetext{
+
+.btn-outline-primary:focus {
+    box-shadow: none;
+}
+
+.imgs {
+    width: 5rem;
+    height: 5rem;
+}
+
+.bluetext {
     color: #3565f9;
 }
-.redtext{
+
+.redtext {
     color: #ef5354;
 }
-.orangetext{
+
+.orangetext {
     color: #f9b343;
 }
-.blueback{
-   background-color:#e5ecfe ; 
+
+.blueback {
+    background-color: #e5ecfe;
 }
-.orangeback{
+
+.orangeback {
     background-color: #fff5e5;
 }
-.redback{
+
+.redback {
     background-color: #fbe4e5;
 }
-.reportrec{
+
+.reportrec {
     border-radius: 1rem;
     width: 60%;
     margin-left: 4.5rem;
 }
-.red{
+
+.red {
     background-color: #f9cece;
-    
+
 }
-.p2pillred{
+
+.p2pillred {
     font-size: 1rem;
     margin-bottom: 0;
-    color: #ef4c4e;  
+    color: #ef4c4e;
+}
+
+.w-33 {
+    width: 33%;
 }
 
 
-.blue{
+.blue {
     background-color: #cfddfd;
-    
+
 }
-.p2pillblue{
+
+.p2pillblue {
     font-size: 1rem;
     margin-bottom: 0;
     color: #2365f9;
 }
-.p2pillorange{
+
+.p2pillorange {
     font-size: 1rem;
     margin-bottom: 0;
     color: #f5993b;
 }
-.badgetext{
+
+.badgetext {
     font-size: 1.5rem;
     font-weight: normal;
 }
-.orange{
+
+.orange {
     background-color: #fff5e5;
 }
-.carrec{
+
+.carrec {
     width: 80%;
     padding: 1.5rem;
     height: auto;
     margin-left: 8rem;
     border-radius: 1rem;
-    background-image: linear-gradient(white,white);
+    background-image: linear-gradient(white, white);
 }
-#datepicker  .ui-datepicker{
+
+#datepicker .ui-datepicker {
     width: 100%;
     border: 1px solid white;
     background-color: white;
     color: #e1e1e5;
     line-height: 2;
     font-size: 1.8rem;
-    
+
 }
-#datepicker 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button{
+
+#datepicker1 .ui-datepicker {
+    width: 100%;
+    border: 1px solid white;
+    background-color: white;
+    color: #e1e1e5;
+    line-height: 2;
+    font-size: 1.8rem;
+
+}
+
+#datepicker2 .ui-datepicker {
+    width: 100%;
+    border: 1px solid white;
+    background-color: white;
+    color: #e1e1e5;
+    line-height: 2;
+    font-size: 1.8rem;
+
+}
+
+
+#datepicker .ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button {
     border: none;
     background: white;
     font-weight: normal;
     color: #6475a9;
     font-size: 1.8rem;
 }
-#datepicker .ui-widget-header ,
-.ui-state-default, .ui-widget-content .ui-state-default  {
+
+#datepicker1 .ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button {
+    border: none;
+    background: white;
+    font-weight: normal;
+    color: #6475a9;
+    font-size: 1.8rem;
+}
+
+#datepicker2 .ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button {
+    border: none;
+    background: white;
+    font-weight: normal;
+    color: #6475a9;
+    font-size: 1.8rem;
+}
+
+#datepicker .ui-widget-header,
+.ui-state-default,
+.ui-widget-content .ui-state-default {
     border: 1px solid white;
     background-color: white;
     color: #6475a9;
@@ -245,142 +425,465 @@ p{
     margin-bottom: 2rem;
 }
 
-#datepicker .ui-datepicker-week-end .ui-state-default{
+#datepicker1 .ui-widget-header,
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+    border: 1px solid white;
+    background-color: white;
+    color: #6475a9;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+#datepicker2 .ui-widget-header,
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+    border: 1px solid white;
+    background-color: white;
+    color: #6475a9;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+#datepicker .ui-datepicker-week-end .ui-state-default {
     color: red;
 }
-#datepicker .ui-state-default{
+
+#datepicker1 .ui-datepicker-week-end .ui-state-default {
+    color: red;
+}
+
+#datepicker2 .ui-datepicker-week-end .ui-state-default {
+    color: red;
+}
+
+#datepicker .ui-state-default {
     text-align: center;
 }
-.txt-center{
+
+#datepicker1 .ui-state-default {
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 1281px) {
-
-
-  
+#datepicker2 .ui-state-default {
+    text-align: center;
 }
+
+#datepicker .ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+    width: auto;
+    border: unset;
+    background: unset;
+    color: #3b6ff9;
+    outline: unset;
+}
+
+#datepicker .ui-datepicker-year {
+    width: auto;
+    border: unset;
+}
+
+#datepicker1 .ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+    width: auto;
+    border: unset;
+    background: unset;
+    outline: unset;
+    color: #3b6ff9;
+}
+
+#datepicker1 .ui-datepicker-year {
+    width: auto;
+    border: unset;
+}
+
+#datepicker2 .ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+    width: auto;
+    border: unset;
+    background: unset;
+    outline: unset;
+    color: #3b6ff9;
+}
+
+#datepicker2 .ui-datepicker-year {
+    width: auto;
+    border: unset;
+}
+
+#datepicker .ui-datepicker-title {
+    outline: unset;
+}
+
+#datepicker .ui-state-default .ui-state-highlight .ui-state-active {
+    border: 1px solid #749bfa;
+    border-radius: 50%;
+    background: #749bfa;
+}
+
+#datepicker .ui-state-active {
+    background: #769cfa;
+    border-radius: 50%;
+    color: white;
+}
+
+#datepicker1 .ui-state-active {
+    background: #769cfa;
+    border-radius: 50%;
+    color: white;
+}
+
+#datepicker2 .ui-state-active {
+    background: #769cfa;
+    border-radius: 50%;
+    color: white;
+}
+
+#datepicker2 .ui-state-default {
+    margin-bottom: 1rem;
+    /* padding: 1rem; */
+}
+
+#datepicker .ui-widget-header {
+    margin-bottom: 1rem;
+}
+
+#datepicker table {
+    margin: 0 0 10.4em;
+}
+
+#datepicker1 .ui-widget-header {
+    margin-bottom: 1rem;
+}
+
+#datepicker1 table {
+    margin: 0 0 10.4em;
+}
+
+#datepicker2 .ui-widget-header {
+    margin-bottom: 1rem;
+}
+
+#datepicker2 table {
+    margin: 0 0 10.4em;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.carousel-control-prev:hover {
+    color: blue;
+}
+
+.carousel-control-next:hover {
+    color: blue;
+}
+
+.table tr {
+    border-top: 15px solid #f3f6fd;
+    border-bottom: 15px solid #f3f6fd;
+}
+
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: #f3f6fd;
+}
+
+.table-responsive-md td {
+    width: 33.33%;
+}
+
+.table .bg-white:hover {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    transform: scale(1);
+    border: 2px solid #f3f6fd;
+
+}
+
+.martop .nav-pills {
+    float: right;
+
+}
+
+.martop .nav-pills .nav-item {
+    border: 1px solid white;
+    background: white;
+
+}
+
+.martop .nav-pills .nav-link {
+    padding: .6rem 1.5rem;
+    font-weight: normal;
+}
+
+.martop .nav-pills .nav-link.active {
+    color: white;
+    background-color: royalblue;
+    border-bottom: unset;
+
+}
+
+.carousel a {
+    padding: .5rem 1rem;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.heigh {
+    height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1281px) {}
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
+    .reportrec {
+        width: 80%;
+    }
+
+    .btnprev {
+        left: 80rem;
+    }
+
+    .btnprevproj {
+        left: 80rem;
+    }
+
+    .section3 {
+        margin-left: 0;
+        overflow-x: hidden;
+    }
 }
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  .reportrec{
-      width: 100%;
-      margin-left: 0;
-  }
-  .txt-center{
-      text-align: left;
-  }
-  .carrec{
-      width: 90%;
-      margin-left: 5rem;
-  }
-  .searchbox{
-      width: 
-      65%;
-  }
-  html{
-      font-size: 50%;
-  }
-  
-  
+    .reportrec {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .txt-center {
+        text-align: center;
+    }
+
+    .carrec {
+        width: 100%;
+        margin-left: 5rem;
+    }
+
+    .searchbox {
+        width:
+            65%;
+    }
+
+    html {
+        font-size: 55%;
+    }
+
+    .btnprev {
+        left: 51.7rem;
+    }
+
+    .btnprevproj {
+        left: 51.7rem;
+    }
+
+    .section3 {
+        margin-left: 0;
+        overflow-x: hidden;
+    }
+
+    .paddsecproject {
+        padding: 1.5rem;
+    }
+
 }
 
 
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
-  .reportrec{
-      width: 32%;
-      margin-left: 0;
-  }  
-  .txt-center{
-      text-align: left;
-  }
-   .carrec{
-      width: 90%;
-      margin-left: 0;
-  }
-  .martop{
-      margin-top: 1.5rem;
-  }
-  html{
-      font-size: 40%;
-  }
-    
-   
- 
-  
+
+    .reportrec {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .txt-center {
+        text-align: left;
+    }
+
+    .carrec {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .martop {
+        margin-top: 1.5rem;
+    }
+
+
+
+    html {
+        font-size: 50%;
+    }
+
+    .btnprev {
+        left: 35rem;
+
+    }
+
+    .btnprevproj {
+        left: 35rem;
+    }
+
+    .section3 {
+        margin-left: 0;
+        overflow-x: hidden;
+    }
+
+    .paddsecproject {
+        padding: 1.5rem;
+    }
+
+    .martop .nav-pills {
+        float: left;
+
+    }
+
+
+
 }
 
 
 @media (min-width: 320px) and (max-width: 480px) {
-   .paddsec{
-      padding: 1.5rem;
-  }  
-  
-  .reportrec{
-      width: 50%;
-      margin-left: 0;
-  }
-  .txt-center{
-      text-align: left;
-  }
-   .carrec{
-      width: 100%;
-      margin-left: 0;
-  }
-    .martop{
-      margin-top: 1.5rem;
-  }
-   html{
-      font-size: 35%;
-  }
-    
+    .paddsec {
+        padding: 1.5rem 1.5rem 5rem;
+    }
+
+
+    .reportrec {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .txt-center {
+        text-align: left;
+    }
+
+    .carrec {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .martop {
+        margin-top: 1.5rem;
+    }
+
+    html {
+        font-size: 45%;
+    }
+
+    .btnprev {
+        left: 30rem;
+
+    }
+
+    .btnprevproj {
+        left: 30rem;
+    }
+
+    .section3 {
+        margin-left: 0;
+        overflow-x: hidden;
+    }
+
+    .paddsecproject {
+        padding: 1.5rem;
+    }
+
+    .martop .nav-pills {
+        float: left !important;
+
+    }
+
+    .headcol {
+        padding: 2.2rem 3rem;
+    }
+
+
 }
 
-@media (min-width: 0px) and (max-width: 319px) {
-    
-  .paddsec{
-      padding: 1.5rem;
-  }
-  .reportrec{
-      
-      margin-left: 0;
-  }
-  .txt-center{
-      text-align: left;
-  }
-   .carrec{
-      width: 100%;
-      margin-left: 0;
-  }
-    .martop{
-      margin-top: 1.5rem;
-  }
-  
-  
-}
+@media (min-width: 50px) and (max-width: 319px) {
 
+
+    .paddsec {
+        padding: 1.5rem 1.5rem 5rem;
+    }
+
+    .reportrec {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .txt-center {
+        text-align: left;
+    }
+
+    .carrec {
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .martop {
+        margin-top: 1.5rem;
+    }
+
+    .btnprev {
+        left: 15rem;
+    }
+
+    .btnprevproj {
+        left: 15rem;
+    }
+
+    html {
+        font-size: 40%;
+    }
+
+    .section3 {
+        margin-left: 0;
+        overflow-x: hidden;
+    }
+
+    .paddsecproject {
+        padding: 1rem;
+    }
+
+    .martop .nav-pills {
+        float: left !important;
+
+    }
+
+    .headcol {
+        padding: 2.2rem;
+    }
+
+}
